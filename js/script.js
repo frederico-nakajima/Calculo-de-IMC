@@ -39,8 +39,9 @@ form.onsubmit = event => {
  
 }
  
+inputWeight.oninput = () => AlertError.close()
+inputHeight.oninput = () => AlertError.close()
     
-
 
    
     
