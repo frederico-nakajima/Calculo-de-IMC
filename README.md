@@ -42,10 +42,9 @@ O Cálculo de IMC é um projeto que mostra o Índice de Massa Corpórea (IMC) de
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/d6SW76yGERsus17VGUSISs/IMC-(Copy)?node-id=108-2&node-type=frame&m=dev). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK]https://www.figma.com/design/d6SW76yGERsus17VGUSISs/IMC-(Copy)?node-id=108-2&node-type=frame&m=dev. É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
-## 📝 Licença
-
+## :memo: Licença
 
 Esse projeto está sob a licença MIT.
 
