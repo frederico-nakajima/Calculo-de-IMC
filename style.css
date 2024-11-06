@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --backgroundTela:#040924;
+    --backgroundCard:#FFF;
+    --backgroundButton:#02799D;
+    --backgroundButton-hover:#2eb3dc;
+    --backgroundAlert:#F03E3E;
+    --colorGeneral:#0C3440;
+    --colorLabel:#00453A;
+    --colorPlaceholderWeight:#212529;
+    --colorPlaceholderHeight:#49505780;
+    --colorWhite:#FFF;
+    --borderFocus:#02799D;
+    --borderInput:rgba(73, 80, 87, 0.30);
+
+}
+
+body{
+    background-color: var(--backgroundTela);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container main{
+    background-color: var(--backgroundCard);
+    border-radius: .4rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    width: 42.8rem;
+    height: 44.0rem;
+}
+
+.container main h1{
+    color:var(--colorGeneral) ;
+    font-family: "Roboto",sans-serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.0rem; /* 125% */
+    margin-bottom: 3.2rem;
+}
+
+label{
+    margin-bottom: .8rem;
+}
+
+.input-wrapper input{
+    width: 30.0rem;
+    height: 5.2rem;
+    border: 1px solid var(--borderInput);
+
+
+    border-radius: .4rem;
+    padding-top: 1.6rem;
+    padding-left: 1.6rem;
+    padding-bottom: 1.6rem;
+    padding-right: auto;
+}
+
+
+.input-wrapper input#weight::placeholder{
+    color:var(--colorPlaceholderWeight) ;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.0rem; /* 125% */
+    padding-top: 1.6rem;
+  
+    padding-bottom: 1.6rem;
+    padding-right: auto;
+    
+}
+
+.input-wrapper input#height::placeholder{
+    color:var(--colorPlaceholderHeight) ;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.0rem; /* 125% */
+    padding-top: 1.6rem;
+   
+    padding-bottom: 1.6rem;
+    padding-right: auto;
+}
+
+label{
+    color: var(--colorLabel);
+    font-family: "Roboto",sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem; /* 128.571% */ 
+}
+
+.container main form button{
+    background-color:var(--backgroundButton) ;
+    color:var(--colorWhite);
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.0rem; /* 125% */
+    width: 30.0rem;
+    height: 5.2rem;
+    border: none;
+    border-radius: .4rem;
+    margin-top:3.2rem ;
+    transition: background .3s;
+    cursor: pointer;
+}
+
+.container main form button:hover{
+    background:var(--backgroundButton-hover) ;
+}
+.input-wrapper{
+    margin-top: 1.6rem;
+}
+input:focus{
+    border: 1px solid var(--borderFocus);
+
+}
+.modal-wrapper.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-wrapper{
+    position: absolute;
+    border: 1px solid #fff;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.70);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.modal.card{
+    border-radius: 6px;
+    background: var(--backgroundCard);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    width: 36.3rem;
+    height: 15.2rem;
+    
+}
+
+.modal-wrapper .modal.card .title{
+    color: #0C3440;
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.0rem; /* 125% */
+    position: relative;
+    display: grid;
+    place-content: center;
+}
+
+.modal-wrapper .modal.card  button img{
+    position: absolute;
+    top: -3.0rem;
+    right: -4.6rem;
+    cursor: pointer;
+
+}
+
+.alert-error.open{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.alert-error{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: transform .5s;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--backgroundAlert) ;
+    color:var(--colorWhite);
+    font-family: "Roboto",sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.0rem; /* 125% */
+   
+    
+}
+
+
+
+
+
+
+#containerAlert.open{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+#containerModal.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
