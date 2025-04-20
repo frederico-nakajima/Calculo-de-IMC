@@ -18,7 +18,6 @@
     --colorWhite:#FFF;
     --borderFocus:#02799D;
     --borderInput:rgba(73, 80, 87, 0.30);
-
 }
 
 body{
@@ -40,8 +39,7 @@ body{
 .container main h1{
     color:var(--colorGeneral) ;
     font-family: "Roboto",sans-serif;
-    font-size: 3.2rem;
-    font-style: normal;
+    font-size: 3.2rem;   
     font-weight: 700;
     line-height: 4.0rem; /* 125% */
     margin-bottom: 3.2rem;
@@ -55,8 +53,6 @@ label{
     width: 30.0rem;
     height: 5.2rem;
     border: 1px solid var(--borderInput);
-
-
     border-radius: .4rem;
     padding-top: 1.6rem;
     padding-left: 1.6rem;
@@ -64,30 +60,24 @@ label{
     padding-right: auto;
 }
 
-
 .input-wrapper input#weight::placeholder{
     color:var(--colorPlaceholderWeight) ;
     font-family: "Roboto",sans-serif;
-    font-size: 1.6rem;
-    font-style: normal;
+    font-size: 1.6rem;   
     font-weight: 400;
-    line-height: 2.0rem; /* 125% */
-    padding-top: 1.6rem;
-  
+    line-height: 2.0rem; 
+    padding-top: 1.6rem;  
     padding-bottom: 1.6rem;
-    padding-right: auto;
-    
+    padding-right: auto;    
 }
 
 .input-wrapper input#height::placeholder{
     color:var(--colorPlaceholderHeight) ;
     font-family: "Roboto",sans-serif;
-    font-size: 1.6rem;
-    font-style: normal;
+    font-size: 1.6rem;    
     font-weight: 400;
-    line-height: 2.0rem; /* 125% */
-    padding-top: 1.6rem;
-   
+    line-height: 2.0rem; 
+    padding-top: 1.6rem;   
     padding-bottom: 1.6rem;
     padding-right: auto;
 }
@@ -95,10 +85,9 @@ label{
 label{
     color: var(--colorLabel);
     font-family: "Roboto",sans-serif;
-    font-size: 1.4rem;
-    font-style: normal;
+    font-size: 1.4rem;    
     font-weight: 400;
-    line-height: 1.8rem; /* 128.571% */ 
+    line-height: 1.8rem; 
 }
 
 .container main form button{
@@ -106,8 +95,7 @@ label{
     color:var(--colorWhite);
     text-align: center;
     font-family: "Roboto",sans-serif;
-    font-size: 1.6rem;
-    font-style: normal;
+    font-size: 1.6rem;   
     font-weight: 700;
     line-height: 2.0rem; /* 125% */
     width: 30.0rem;
@@ -127,7 +115,6 @@ label{
 }
 input:focus{
     border: 1px solid var(--borderFocus);
-
 }
 .modal-wrapper.open{
     opacity: 1;
@@ -148,23 +135,20 @@ input:focus{
     visibility: hidden;
 }
 
-
 .modal.card{
     border-radius: 6px;
     background: var(--backgroundCard);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
     width: 36.3rem;
-    height: 15.2rem;
-    
+    height: 15.2rem;    
 }
 
 .modal-wrapper .modal.card .title{
     color: #0C3440;
     text-align: center;
     font-family: "Roboto",sans-serif;
-    font-size: 2.3rem;
-    font-style: normal;
+    font-size: 2.3rem;   
     font-weight: 700;
     line-height: 4.0rem; /* 125% */
     position: relative;
@@ -177,7 +161,6 @@ input:focus{
     top: -3.0rem;
     right: -4.6rem;
     cursor: pointer;
-
 }
 
 .alert-error.open{
@@ -191,7 +174,6 @@ input:focus{
     opacity: 0;
     transform: translateY(-30px);
     transition: transform .5s;
-
     position: absolute;
     top: 0;
     right: 0;
@@ -205,18 +187,10 @@ input:focus{
     background:var(--backgroundAlert) ;
     color:var(--colorWhite);
     font-family: "Roboto",sans-serif;
-    font-size: 1.6rem;
-    font-style: normal;
+    font-size: 1.6rem;   
     font-weight: 700;
-    line-height: 2.0rem; /* 125% */
-   
-    
+    line-height: 2.0rem;    
 }
-
-
-
-
-
 
 #containerAlert.open{
     opacity: 1;

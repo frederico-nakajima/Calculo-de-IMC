@@ -7,13 +7,11 @@ export const Modal = {
     },
     close(){
         Modal.wrapper.classList.remove('open')
-    }
-  
+    }  
 }
     
 Modal.buttonClose.onclick = () => {
-    Modal.close();
-    
+    Modal.close();    
 }   
 
 window.addEventListener('keydown',handleKeydown)
